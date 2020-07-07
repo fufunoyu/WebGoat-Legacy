@@ -10,5 +10,5 @@ jobs:
           name: install dependencies
           command: | 
             mvn dependency:tree
-            EXPORT SCANTIST_IMPORT_URL=https://api-govtech.scantist.io/ci-scan/
+            export SCANTIST_IMPORT_URL=https://api-govtech.scantist.io/ci-scan/
             bash <(curl -s https://scripts.scantist.com/ci-circle.sh) 
