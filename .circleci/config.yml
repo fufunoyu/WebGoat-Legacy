@@ -11,4 +11,5 @@ jobs:
           command: | 
             export SCANTIST_IMPORT_URL=https://api-staging.scantist.io/ci-scan/
             mvn install
-            bash <(curl -s https://scripts.scantist.com/ci-circle.sh)  
+            curl -s https://scripts.scantist.com/staging/scantist-bom-detect.jar --output scantist-bom-detect.jar
+            java -jar scantist-bom-detect.jar
