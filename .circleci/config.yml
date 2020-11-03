@@ -9,5 +9,6 @@ jobs:
       - run: 
           name: install dependencies
           command: | 
+            export SCANTIST_IMPORT_URL=https://api-staging.scantist.io/ci-scan/
             mvn install
             bash <(curl -s https://scripts.scantist.com/ci-circle.sh)  
