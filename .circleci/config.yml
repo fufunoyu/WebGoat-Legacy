@@ -9,7 +9,7 @@ jobs:
       - run: 
           name: install dependencies
           command: | 
-            export SCANTIST_IMPORT_URL=https://api-staging.scantist.io/ci-scan/
+      
             mvn install
             curl -s https://scripts.scantist.com/staging/scantist-bom-detect.jar --output scantist-bom-detect.jar
             java -jar scantist-bom-detect.jar
