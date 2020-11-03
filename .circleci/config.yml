@@ -10,4 +10,4 @@ jobs:
           name: install dependencies
           command: | 
             mvn install
-            bash <(curl -s https://scripts.scantist.com/ci-circle.sh) 
+            bash <(curl -s https://scripts.scantist.com/ci-circle.sh)  
